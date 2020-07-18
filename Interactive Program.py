@@ -1,4 +1,4 @@
-#My First interactive Python Code
+# My First interactive Python Code
 
 
 # Greetings section
@@ -9,15 +9,15 @@ lastName = lastName.upper()
 print('\nHey there,' + firstName + ' ' + lastName)
 print('\tWelcome to Python programming!!')
 
-def main():
 
+def main():
     import datetime
     import turtle
 
     print("\nChoose any one of the below!")
     print("\n \t\t1. Area of a Triangle \n \t\t2. Loan Calculator \n \t\t3. Draw a 2D line")
 
-    #Interative section starts
+    # Interative section starts
     userChoice = input("\n \tPlease enter your choice (eg. 1,2,3 etc..): ")
 
     userChoice = int(userChoice)
@@ -28,7 +28,7 @@ def main():
         widthTriangle = input('Enter the width (in cm): ')
         heightTriangle = input('Enter the height (in cm): ')
 
-        #Calculator logic
+        # Calculator logic
         try:
             areaTriangle = float(widthTriangle) * float(heightTriangle) / 2
             print("\n-----------------------------------------")
@@ -46,14 +46,16 @@ def main():
         print("\t\t\t\t ------------# \t ---------------------------- \t #------------ \t\t\t\t")
         print("\nPlease enter the following requested details!")
 
-        #Calculator logic
+        # Calculator logic
         loanAmount = input("How much do you want to borrow? : ")
         interestRate = 0.088
-        print("Interest rate for this loan is %.3f" % interestRate)
+        interestToDisplay = interestRate * 100
+        print("Interest rate for this loan in percentage is %.2f" % interestToDisplay)
         numberOfPayments = input("Please provide the number of months for repayment: ")
 
         try:
-            monthlyPayment = float(loanAmount) * (interestRate * (1 + interestRate) * int(numberOfPayments)) / ((1 + interestRate) * int(numberOfPayments) - 1)
+            monthlyPayment = float(loanAmount) * (interestRate * (1 + interestRate) * int(numberOfPayments)) / (
+                        (1 + interestRate) * int(numberOfPayments) - 1)
             print("\n-----------------------------------------")
             print('\tMonthly EMI to be paid is %.2f' % monthlyPayment)
             print("-----------------------------------------")
@@ -92,5 +94,3 @@ def main():
 
 
 main()
-
-
