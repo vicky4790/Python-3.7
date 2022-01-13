@@ -1,0 +1,34 @@
+How to install pip in macOS ?
+Difficulty Level : Easy
+Last Updated : 23 Mar, 2020
+Prerequisite: Python Language Introduction
+ 
+Before we start with how to install pip for Python on macOS, let’s first go through the basic introduction to Python. Python is a widely-used general-purpose, high-level programming language. Python is a programming language that lets you work quickly and integrate systems more efficiently.
+
+PIP is a package management system used to install and manage software packages/libraries written in Python. These files are stored in a large “on-line repository” termed as Python Package Index (PyPI).
+
+pip uses PyPI as the default source for packages and their dependencies. So whenever you type:
+
+pip install package_name
+pip will look for that package on PyPI and if found, it will download and install the package on your local system.
+
+Download and Install pip:
+pip can be downloaded and installed using command-line by going through the following steps:
+
+
+
+Download the get-pip.py file and store it in the same directory as python is installed.
+or
+Use the following command to download pip directly,
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+Now execute the downloaded file using below command
+python3 get-pip.py
+and wait through the installation process.
+verify-install-macos-pip
+
+Voila! pip is now installed on your system.
+Verification of the Installation process:
+One can easily verify if the pip has been installed correctly by performing a version check on the same. Just go to the command line and execute the following command:
+
+pip3 --version
+install-pip-macOS
